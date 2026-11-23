@@ -1,0 +1,61 @@
+{
+  "artifact_type": "dart-sdk",
+  "package_manifest": "pubspec.yaml",
+  "package_name": "box_fleet_hosted_control_plane_boxfleet_io",
+  "package_version": "0.3.0",
+  "runtime_floor": ">=3.0.0 <4.0.0",
+  "source_files": [
+    {
+      "path": ".omniwrap-skill-manifest.json",
+      "sha256": "6635005ce7444f08585d8fbaf0b6dc900175b3c78c4862fc13eb4fbdc82739db",
+      "size_bytes": 411
+    },
+    {
+      "path": "agent-session.json",
+      "sha256": "7c14c192e4493481188c3ae61f7fad4808898eebb96e72e06697c1fe61f0ebb5",
+      "size_bytes": 230232
+    },
+    {
+      "path": "AGENT_SESSION.md",
+      "sha256": "da09e0a77ce1f64988949bed15c72263199f01e2bc0b9083d8fc04a4f42fdae1",
+      "size_bytes": 694
+    },
+    {
+      "path": "api.md",
+      "sha256": "b602348f6db28d805b2273bd767e366d2566d9e88185cd49414b34f9623f5a14",
+      "size_bytes": 93994
+    },
+    {
+      "path": "lib/agent_session.dart",
+      "sha256": "ebb0b76b3cbe40350a1a290cd4508856a50cbf5b9dc5c3d70c88c64cb60dac59",
+      "size_bytes": 1311
+    },
+    {
+      "path": "lib/client.dart",
+      "sha256": "8777e3d982fcae48ee850ed36ab0dc94195da71f616f6ca623d2936d28feef84",
+      "size_bytes": 23756
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+      "size_bytes": 282
+    },
+    {
+      "path": "pubspec.yaml",
+      "sha256": "105a917188b22e6eceb12d4f77b15463313605465799aba4ea902dfc40644add",
+      "size_bytes": 317
+    },
+    {
+      "path": "README.md",
+      "sha256": "98e56e83dea886a4c2c54f343094ed29894e87c8373453c32e272d37c0bad145",
+      "size_bytes": 855
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "cb69600a970b76d83eb9be42269870077d5e1af402f06acebe492c5b26a7216d",
+      "size_bytes": 25000
+    }
+  ],
+  "source_version": "0.3.0",
+  "target": "dart"
+}

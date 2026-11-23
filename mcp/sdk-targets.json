@@ -1,0 +1,412 @@
+{
+  "contract_fingerprint": "e3fd4c744ae8933c0e0bd0c21a692897795a14657e577fb82108500d39f2ac8d",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "box_fleet_hosted_control_plane_boxfleet_io@0.3.0",
+        "ecosystem": "pub.dev",
+        "entry": "OmniWrapClient",
+        "import": "import 'package:box_fleet_hosted_control_plane_boxfleet_io/client.dart';"
+      },
+      "operations": {
+        "cancelJob": {
+          "member": "cancelJob",
+          "method": "POST",
+          "path": "/v1/jobs/{jobId}/cancel",
+          "resource": "jobs",
+          "signature": "Future<ApiResponse> cancelJob(String jobId)"
+        },
+        "closeHostedWorkspace": {
+          "member": "closeHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/close",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> closeHostedWorkspace(String workspaceId)"
+        },
+        "closePersistentBox": {
+          "member": "closePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/close",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> closePersistentBox(String organizationId, String boxId)"
+        },
+        "controlUser": {
+          "member": "controlUser",
+          "method": "POST",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> controlUser(Map<String, dynamic>? body)"
+        },
+        "createBillingPortal": {
+          "member": "createBillingPortal",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/portal",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> createBillingPortal(String organizationId)"
+        },
+        "createBox": {
+          "member": "createBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> createBox(String organizationId, Map<String, dynamic>? body)"
+        },
+        "createCheckout": {
+          "member": "createCheckout",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/billing/checkout",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> createCheckout(String organizationId, Map<String, dynamic>? body)"
+        },
+        "getAccountsConfig": {
+          "member": "getAccountsConfig",
+          "method": "GET",
+          "path": "/v1/accounts/config",
+          "resource": "accounts",
+          "signature": "Future<ApiResponse> getAccountsConfig()"
+        },
+        "getAdminConsole": {
+          "member": "getAdminConsole",
+          "method": "GET",
+          "path": "/v1/admin/console",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> getAdminConsole()"
+        },
+        "getAdminPlans": {
+          "member": "getAdminPlans",
+          "method": "GET",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> getAdminPlans()"
+        },
+        "getAuthGate": {
+          "member": "getAuthGate",
+          "method": "GET",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "Future<ApiResponse> getAuthGate()"
+        },
+        "getBilling": {
+          "member": "getBilling",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getBilling(String organizationId)"
+        },
+        "getBox": {
+          "member": "getBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getBox(String organizationId, String boxId)"
+        },
+        "getEntitlements": {
+          "member": "getEntitlements",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/entitlements",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getEntitlements(String organizationId)"
+        },
+        "getFleet": {
+          "member": "getFleet",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getFleet(String organizationId)"
+        },
+        "getFleetPolicy": {
+          "member": "getFleetPolicy",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getFleetPolicy(String organizationId)"
+        },
+        "getHealth": {
+          "member": "getHealth",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "Future<ApiResponse> getHealth()"
+        },
+        "getHostedWorkspace": {
+          "member": "getHostedWorkspace",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> getHostedWorkspace(String workspaceId)"
+        },
+        "getHostedWorkspaceOperation": {
+          "member": "getHostedWorkspaceOperation",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/operations/{operationId}",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> getHostedWorkspaceOperation(String workspaceId, String operationId)"
+        },
+        "getHostedWorkspaceSource": {
+          "member": "getHostedWorkspaceSource",
+          "method": "GET",
+          "path": "/v1/workspaces/{workspaceId}/source",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> getHostedWorkspaceSource(String workspaceId)"
+        },
+        "getJob": {
+          "member": "getJob",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}",
+          "resource": "jobs",
+          "signature": "Future<ApiResponse> getJob(String jobId)"
+        },
+        "getPersistentBox": {
+          "member": "getPersistentBox",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getPersistentBox(String organizationId, String boxId)"
+        },
+        "getPersistentBoxProviderUsage": {
+          "member": "getPersistentBoxProviderUsage",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/usage",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> getPersistentBoxProviderUsage(String organizationId, String boxId, {Map<String, String> query = const {}})"
+        },
+        "getPlans": {
+          "member": "getPlans",
+          "method": "GET",
+          "path": "/v1/plans",
+          "resource": "plans",
+          "signature": "Future<ApiResponse> getPlans()"
+        },
+        "ingestTelemetry": {
+          "member": "ingestTelemetry",
+          "method": "POST",
+          "path": "/v1/telemetry/ingest",
+          "resource": "telemetry",
+          "signature": "Future<ApiResponse> ingestTelemetry(Map<String, dynamic>? body)"
+        },
+        "listBoxes": {
+          "member": "listBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/boxes",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listBoxes(String organizationId)"
+        },
+        "listHostedWorkspaces": {
+          "member": "listHostedWorkspaces",
+          "method": "GET",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> listHostedWorkspaces()"
+        },
+        "listInvoices": {
+          "member": "listInvoices",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/billing/invoices",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listInvoices(String organizationId)"
+        },
+        "listJobEvents": {
+          "member": "listJobEvents",
+          "method": "GET",
+          "path": "/v1/jobs/{jobId}/events",
+          "resource": "jobs",
+          "signature": "Future<ApiResponse> listJobEvents(String jobId)"
+        },
+        "listJobs": {
+          "member": "listJobs",
+          "method": "GET",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "Future<ApiResponse> listJobs()"
+        },
+        "listMembers": {
+          "member": "listMembers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listMembers(String organizationId)"
+        },
+        "listObservedBoxes": {
+          "member": "listObservedBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/observed-boxes",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listObservedBoxes(String organizationId)"
+        },
+        "listPersistentBoxOffers": {
+          "member": "listPersistentBoxOffers",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/offers",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listPersistentBoxOffers(String organizationId)"
+        },
+        "listPersistentBoxes": {
+          "member": "listPersistentBoxes",
+          "method": "GET",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> listPersistentBoxes(String organizationId, {Map<String, String> query = const {}})"
+        },
+        "listUsers": {
+          "member": "listUsers",
+          "method": "GET",
+          "path": "/v1/admin/users",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> listUsers()"
+        },
+        "listWaitlist": {
+          "member": "listWaitlist",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "Future<ApiResponse> listWaitlist()"
+        },
+        "openHostedWorkspace": {
+          "member": "openHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> openHostedWorkspace(Map<String, dynamic>? body)"
+        },
+        "provisionPersistentBox": {
+          "member": "provisionPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> provisionPersistentBox(String organizationId, Map<String, dynamic>? body)"
+        },
+        "putFleetPolicy": {
+          "member": "putFleetPolicy",
+          "method": "PUT",
+          "path": "/v1/organizations/{organizationId}/fleet/policy",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> putFleetPolicy(String organizationId, Map<String, dynamic>? body)"
+        },
+        "readTelemetry": {
+          "member": "readTelemetry",
+          "method": "GET",
+          "path": "/v1/admin/telemetry",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> readTelemetry()"
+        },
+        "reconcilePersistentBox": {
+          "member": "reconcilePersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/reconcile",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> reconcilePersistentBox(String organizationId, String boxId, Map<String, dynamic>? body)"
+        },
+        "recoverHostedWorkspace": {
+          "member": "recoverHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/recover",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> recoverHostedWorkspace(String workspaceId, Map<String, dynamic>? body)"
+        },
+        "register": {
+          "member": "register",
+          "method": "POST",
+          "path": "/v1/auth/register",
+          "resource": "auth",
+          "signature": "Future<ApiResponse> register(Map<String, dynamic>? body)"
+        },
+        "removeMember": {
+          "member": "removeMember",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/members/{userId}",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> removeMember(String organizationId, String userId)"
+        },
+        "requestAccess": {
+          "member": "requestAccess",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "Future<ApiResponse> requestAccess(Map<String, dynamic>? body)"
+        },
+        "runHostedWorkspace": {
+          "member": "runHostedWorkspace",
+          "method": "POST",
+          "path": "/v1/workspaces/{workspaceId}/run",
+          "resource": "workspaces",
+          "signature": "Future<ApiResponse> runHostedWorkspace(String workspaceId, Map<String, dynamic>? body)"
+        },
+        "startPersistentBox": {
+          "member": "startPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/start",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> startPersistentBox(String organizationId, String boxId, Map<String, dynamic>? body)"
+        },
+        "stopBox": {
+          "member": "stopBox",
+          "method": "DELETE",
+          "path": "/v1/organizations/{organizationId}/boxes/{boxId}",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> stopBox(String organizationId, String boxId)"
+        },
+        "stopPersistentBox": {
+          "member": "stopPersistentBox",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/persistent-boxes/{boxId}/stop",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> stopPersistentBox(String organizationId, String boxId, Map<String, dynamic>? body)"
+        },
+        "stripeWebhook": {
+          "member": "stripeWebhook",
+          "method": "POST",
+          "path": "/v1/billing/stripe/webhook",
+          "resource": "billing",
+          "signature": "Future<ApiResponse> stripeWebhook()"
+        },
+        "submitJob": {
+          "member": "submitJob",
+          "method": "POST",
+          "path": "/v1/jobs",
+          "resource": "jobs",
+          "signature": "Future<ApiResponse> submitJob(Map<String, dynamic>? body)"
+        },
+        "syncObservedBoxes": {
+          "member": "syncObservedBoxes",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/observed-boxes/sync",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> syncObservedBoxes(String organizationId, Map<String, dynamic>? body)"
+        },
+        "updateAuthGate": {
+          "member": "updateAuthGate",
+          "method": "PUT",
+          "path": "/v1/auth/gate",
+          "resource": "auth",
+          "signature": "Future<ApiResponse> updateAuthGate(Map<String, dynamic>? body)"
+        },
+        "updatePlan": {
+          "member": "updatePlan",
+          "method": "POST",
+          "path": "/v1/admin/plans",
+          "resource": "admin",
+          "signature": "Future<ApiResponse> updatePlan(Map<String, dynamic>? body)"
+        },
+        "upsertMember": {
+          "member": "upsertMember",
+          "method": "POST",
+          "path": "/v1/organizations/{organizationId}/members",
+          "resource": "organizations",
+          "signature": "Future<ApiResponse> upsertMember(String organizationId, Map<String, dynamic>? body)"
+        },
+        "verifyLicense": {
+          "member": "verifyLicense",
+          "method": "POST",
+          "path": "/v1/auth/verify",
+          "resource": "auth",
+          "signature": "Future<ApiResponse> verifyLicense(Map<String, dynamic>? body)"
+        }
+      },
+      "package_directory": "../box-fleet-hosted-control-plane-boxfleet-io-dart-sdk",
+      "package_manifest": "pubspec.yaml",
+      "reference": "api.md",
+      "renderer": "dart"
+    }
+  ]
+}
